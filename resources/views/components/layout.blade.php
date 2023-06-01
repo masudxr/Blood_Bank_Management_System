@@ -20,6 +20,62 @@
     .clamp.one-line {
         -webkit-line-clamp: 1;
     }
+
+    #customers {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    #customers td,
+    #customers th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    #customers tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    #customers tr:hover {
+        background-color: #ddd;
+    }
+
+    #customers th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #04AA6D;
+        color: white;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Create three equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+        height: 300px;
+        /* Should be removed. Only for demonstration */
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+        .column {
+            width: 100%;
+        }
+    }
+
 </style>
 
 <body style="font-family: Open Sans, sans-serif">
@@ -33,14 +89,18 @@
 
             <div class="mt-8 md:mt-0 flex items-center">
                 @auth
-                <span class="text-xs font-bold uppercase">Welcome, {{auth()->user()->name}}!</span>
-                <form method="POST" action="/logout" class="text-xs fonr-semibold text-blue-500 ml-6">
+                <a href="/donar" class="ml-6 text-xs font-bold uppercase">Donor List</a>
+                <a href="/list" class="ml-6 text-xs font-bold uppercase">Stock Blood List</a>
+                <a href="/store" class="ml-6 text-xs font-bold uppercase">Add New Stock</a>
+                <span class="ml-6 text-xs font-bold uppercase">{{auth()->user()->name}}</span>
+                <form method="POST" action="/welcome" class="text-xs fonr-semibold text-blue-500 ml-6">
                     @csrf
                     <button type="submit">Log Out</button>
                 </form>
                 @else
-                <a href="/welcome" class="ml-6 text-xs font-bold uppercase">Home</a>
-                <a href="/about" class="ml-6 text-xs font-bold uppercase">About</a>
+                <a href="/donar" class="ml-6 text-xs font-bold uppercase">Donor List</a>
+                <a href="/list" class="ml-6 text-xs font-bold uppercase">Stock Blood List</a>
+                <a href="/store" class="ml-6 text-xs font-bold uppercase">Add New Stock</a>
                 <a href="/contact" class="ml-6 text-xs font-bold uppercase">Contact</a>
                 @endauth
 

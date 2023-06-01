@@ -11,39 +11,36 @@
                 <img class="pic" src="/images/banner.webp" alt="Laracasts Logo">
             </a>
         </div>
-        <div class="column">
-            <section class="px-6 py-8">
-                <main class="max-w-lg max-auto bg-gray-100 p-6 rounded-xl">
-                    <h1 class="text-center font-bond text-sl">Log In!</h1>
-                    <form method="POST" action="/welcome">
-                        @csrf
 
-                        <div class="mb-2">
-                            <label class="block mb-2 uppercase font-blod text-xs text-gray-700" for="email">
-                                Email
-                            </label>
-                            <input class="border border-gray-400 p-2 w-full" type="email" name="email" id="email" value="{{old('email')}}" required>
-                        </div>
+        <div class="column" style="background-color:#ccc;">
+            <h1>
+                Become a blood donor !
+            </h1>
+            <h3>
+                If you are completely new to blood donation
+            </h3>
+            <br />
 
-                        <div class="mb-2">
-                            <label class="block mb-2 uppercase font-blod text-xs text-gray-700" for="password">
-                                Password
-                            </label>
-                            <input class="border border-gray-400 p-2 w-full" type="password" name="password" id="password" required>
-                        </div>
-
-                        <div class="mb-2">
-                            <button type="submit" class="bg-blue-400 text-white rounded py-2 px-4 hover:bg-blue-500">
-                                Log In
-                            </button>
-                        </div>
-                        <a href="/register">
-                            New Here !!, Then Plz Register our Site for more info!
-                        </a>
-                    </form>
-                </main>
-            </section>
+            <a href="/register">
+                <button>
+                    Registration
+                </button>
+            </a>
         </div>
+        <div class="column" style="background-color:#f5f5f5;">
+            <h1>
+                Already a blood donor?
+            </h1>
+            <h3>
+                Sign in for an online account to manage appointments
+            </h3>
+            <br />
 
+            <a href="/login">
+                <button>
+                    Login
+                </button>
+            </a>
+        </div>
     </div>
 </x-homeLayout>

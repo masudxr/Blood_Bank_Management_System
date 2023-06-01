@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blood;
 use App\Models\User;
 use Illuminate\Http\Request;
 
@@ -9,11 +10,14 @@ class RegisterController extends Controller
 {
     public function create()
     {
-        return view('registration.create');
+        return view('registration.create', [
+            'bloods' => Blood::all()
+        ]);
     }
 
     public function store()
     {
+        // return request()->all();
         $attribute = request()->validate([
             'name' => 'required|max:255',
             'email' => 'required|email|max:255',
@@ -23,7 +27,9 @@ class RegisterController extends Controller
             'blood_group' => 'required|max:255',
 
         ]);
+        
         $user = User::create($attribute);
+        // ddd($user);
 
         auth()->login($user);
 

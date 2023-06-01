@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\StockController;
 use App\Http\Controllers\UserController;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
@@ -25,7 +26,10 @@ Route::get('/', function () {
 Route::get('register', [RegisterController::class, 'create']);
 Route::post('register',[RegisterController::class, 'store']);
 
-Route::post('welcome',[UserController::class, 'store']);
+Route::get('login',[UserController::class, 'loginView']);
+Route::post('login',[UserController::class, 'store']);
+Route::get('logout',[UserController::class, 'destroy']);
+
 
 Route::get('contact', function () {
     return view('contact.contact');
@@ -34,3 +38,10 @@ Route::get('contact', function () {
 Route::get('about', function () {
     return view('about.about');
 });
+
+Route::get('store', [StockController::class, 'index']);     //show stock form
+Route::post('store', [StockController::class, 'store']);    // Update new stock
+
+
+Route::get('donar',[UserController::class, 'show']);   //Donar List
+Route::get('list',[StockController::class, 'show']);   //Stock List
