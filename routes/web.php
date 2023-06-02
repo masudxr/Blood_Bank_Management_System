@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BloodController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\StockController;
 use App\Http\Controllers\UserController;
@@ -45,3 +46,5 @@ Route::post('store', [StockController::class, 'store']);    // Update new stock
 
 Route::get('donar',[UserController::class, 'show']);   //Donar List
 Route::get('list',[StockController::class, 'show']);   //Stock List
+
+Route::get('group',[BloodController::class, 'index']);

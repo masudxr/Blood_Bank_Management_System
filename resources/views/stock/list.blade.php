@@ -8,13 +8,12 @@
         <tr>
             <th>Blood Group</th>
             <th>Total Stock</th>
+            <a href="update.php?id='. $row['id'] .'" class="mr-3" title="Update Record" data-toggle="tooltip"><span class="fa fa-pencil"></span></a>
         </tr>
         @foreach($list as $stock)
         <tr>
-
             <td>{{$stock->blood_group}}</td>
             <td>{{$stock->bags}}</td>
-
         </tr>
         @endforeach
     </table>

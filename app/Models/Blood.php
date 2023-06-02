@@ -10,6 +10,7 @@ class Blood extends Model
     use HasFactory;
 
     protected $fillable = [
-        'blood_group'
+        'name'
     ];
+    protected $table = 'blood_group';
 }

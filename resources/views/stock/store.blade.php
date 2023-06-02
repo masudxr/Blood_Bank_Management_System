@@ -4,15 +4,13 @@
             <h1 class="text-center font-bond text-sl">Update Stock!</h1>
             <form method="POST" action="/store" class="mt-10">
                 @csrf
-
-                <div class="mb-6">
-                    <label class="block mb-2 uppercase font-blod text-xs text-gray-700" for="blood_group">
-                        Blood Group
-                    </label>
-                    <input class="border border-gray-400 p-2 w-full" type="text" name="blood_group" id="blood_group" value="{{old('blood_group')}}" required>
-                    @error('blood_group')
-                        <p class="text-red-500 text-xs mt-1">{{$message}}</p>
-                    @enderror
+                <div class="custom-select mb-6" style="width:200px;">
+                    <select name="blood_group">
+                        <option value="0">Blood Group</option>
+                        @foreach($bloods as $blood)
+                        <option name="blood_group" value={{$blood->name}}>{{$blood->name}}</option>
+                        @endforeach
+                    </select>
                 </div>
 
                 <div class="mb-6">

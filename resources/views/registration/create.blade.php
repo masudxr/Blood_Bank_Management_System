@@ -60,11 +60,11 @@
                         Blood Group
                     </label>
                 </div>
-                <div class="custom-select mb-6" style="width:200px;">
-                    <select>
+                <div class="custom-select" style="width:200px;">
+                    <select name="blood_group">
                         <option value="0">Blood Group</option>
                         @foreach($bloods as $blood)
-                        <option value={{$blood->id}}>{{$blood->blood_group}}</option>
+                        <option name="blood_group" value={{$blood->id}}>{{$blood->name}}</option>
                         @endforeach
                     </select>
                 </div>
