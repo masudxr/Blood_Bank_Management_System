@@ -3,7 +3,11 @@
         Donar Details !!
     </h2>
     <br />
-
+    <h1 class="mb-6">
+        <a href="/register">
+            Add New Donar
+        </a>
+    </h1>
     <table id="customers">
   <tr>
     <th>Name</th>

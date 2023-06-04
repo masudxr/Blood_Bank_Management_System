@@ -40,11 +40,22 @@ Route::get('about', function () {
     return view('about.about');
 });
 
-Route::get('store', [StockController::class, 'index']);     //show stock form
-Route::post('store', [StockController::class, 'store']);    // Update new stock
+Route::get('admin/store', [StockController::class, 'index']);     //show stock form
+Route::post('admin/store', [StockController::class, 'store']);    // Update new stock
 
 
 Route::get('donar',[UserController::class, 'show']);   //Donar List
 Route::get('list',[StockController::class, 'show']);   //Stock List
+Route::get('update',[StockController::class, 'getUpdate']);   //getUpdate List
+Route::post('update',[StockController::class, 'update']);   // update List
+
+
+Route::get('admin/donor',[UserController::class, 'adminList']);   //Donar List
+Route::get('admin/edit',[UserController::class, 'getDonarUpdatePage']);   //getUpdate Donor List
+Route::post('admin/edit',[UserController::class, 'edit']);   // update Donar List
+Route::get('admin/delete',[UserController::class, 'getDelete']);   // get delete Donar
+
+
+
 
 Route::get('group',[BloodController::class, 'index']);

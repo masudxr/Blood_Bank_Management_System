@@ -6,14 +6,18 @@
 
     <table id="customers">
         <tr>
-            <th>Blood Group</th>
-            <th>Total Stock</th>
-            <a href="update.php?id='. $row['id'] .'" class="mr-3" title="Update Record" data-toggle="tooltip"><span class="fa fa-pencil"></span></a>
+            <th><strong>Blood Group</strong></th>
+            <th><strong>Total Stock</strong></th>
+            <th><strong>Action</strong></th>
         </tr>
         @foreach($list as $stock)
         <tr>
             <td>{{$stock->blood_group}}</td>
             <td>{{$stock->bags}}</td>
+            <td>
+            <a href="update?id={{$stock->id}}">Edit</a>
+            </td>
+
         </tr>
         @endforeach
     </table>

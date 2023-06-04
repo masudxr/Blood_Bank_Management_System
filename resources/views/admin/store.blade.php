@@ -1,7 +1,7 @@
-<x-layout>
+<x-admin>
     <section class="px-6 py-8">
         <main class="max-w-lg max-auto mt-10 bg-gray-100 border border-gray-200 p-6 rounded-xl">
-            <h1 class="text-center font-bond text-sl">Update Stock!</h1>
+            <h1 class="text-center font-bond text-sl">Add Blood Group And Update Stock!</h1>
             <form method="POST" action="/store" class="mt-10">
                 @csrf
                 <div class="custom-select mb-6" style="width:200px;">
@@ -36,4 +36,4 @@
         <p>{{session('success')}}</p>
     </div>
     @endif
-</x-layout>
+</x-admin>
