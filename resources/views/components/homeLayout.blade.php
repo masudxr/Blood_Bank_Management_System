@@ -11,31 +11,34 @@
         scroll-behavior: smooth;
     }
 
-.clamp {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
+    .clamp {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
 
-.clamp.one-line {
-    -webkit-line-clamp: 1;
-}
-.column {
-  flex: 50%;
-  padding: 10px;
-  height: 300px;
-}
-* {
-  box-sizing: border-box;
-}
+    .clamp.one-line {
+        -webkit-line-clamp: 1;
+    }
 
-.row {
-  display: flex;
-}
-.pic{
-    max-width:60%;
-    height:16;
-}
+    .column {
+        flex: 50%;
+        padding: 10px;
+        height: 300px;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .pic {
+        max-width: 60%;
+        height: 16;
+    }
 </style>
 
 <body style="font-family: Open Sans, sans-serif">
@@ -48,6 +51,8 @@
             </div>
 
             <div class="mt-8 md:mt-0 flex items-center">
+                <a href="/donar" class="ml-6 text-xs font-bold uppercase">Donor List</a>
+                <a href="/list" class="ml-6 text-xs font-bold uppercase">Stock Blood List</a>
                 <a href="#newsletter" class="bg-blue-500 ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-5">
                     Subscribe for Updates
                 </a>

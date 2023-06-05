@@ -82,25 +82,25 @@
     <section class="px-6 py-8">
         <nav class="md:flex md:justify-between md:items-center">
             <div>
-                <a href="donor">
+                <a href="welcome">
                     <img src="/images/logo.png" alt="Laracasts Logo" width="165" height="16">
                 </a>
             </div>
 
             <div class="mt-8 md:mt-0 flex items-center">
                 @auth
-                <!-- <a href="admin/donar" class="ml-6 text-xs font-bold uppercase">Donor List</a> -->
+                <a href="donor" class="ml-6 text-xs font-bold uppercase">Donor List</a>
                 <a href="list" class="ml-6 text-xs font-bold uppercase">Stock Blood List</a>
                 <a href="store" class="ml-6 text-xs font-bold uppercase">Add New Stock</a>
                 <span class="ml-6 text-xs font-bold uppercase">{{auth()->user()->name}}</span>
-                <form method="POST" action="/welcome" class="text-xs fonr-semibold text-blue-500 ml-6">
+                <form method="POST" action="logout" class="text-xs fonr-semibold text-blue-500 ml-6">
                     @csrf
                     <button type="submit">Log Out</button>
                 </form>
                 @else
-                <!-- <a href="/donar" class="ml-6 text-xs font-bold uppercase">Donor List</a> -->
+                <a href="donor" class="ml-6 text-xs font-bold uppercase">Donor List</a>
                 <a href="list" class="ml-6 text-xs font-bold uppercase">Stock Blood List</a>
-                <!-- <a href="/store" class="ml-6 text-xs font-bold uppercase">Add New Stock</a> -->
+                <a href="store" class="ml-6 text-xs font-bold uppercase">Add New Stock</a>
                 <a href="/contact" class="ml-6 text-xs font-bold uppercase">Contact</a>
                 @endauth
 

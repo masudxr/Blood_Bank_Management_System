@@ -1,7 +1,12 @@
 <x-admin>
-    <h2>
+    <h2 class="mb-3">
         Donar Details !!
     </h2>
+    <div class="relative flex lg:inline-flex items-center bg-gray-100 rounded-xl px-3 py-2 mb-4">
+        <form method="GET" action="#">
+            <input type="text" name="search" placeholder="Search Blood Group" class="bg-transparent placeholder-black font-semibold text-sm" value="{{ request('search')}}">
+        </form>
+    </div>
     <br />
     <h1>
         <a href="/register">

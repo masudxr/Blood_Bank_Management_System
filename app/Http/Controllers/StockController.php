@@ -47,12 +47,18 @@ class StockController extends Controller
 
     public function update()
     {
-
         $list = request()->input();
         $newList = Stock::find($list['id']);
         $newList->bags = request()->input('bags');
         // $newList->blood_group = request()->input('blood_group');
         $newList->update();
-        return redirect('/list');
+        return redirect('admin/donor');
+    }
+
+    public function listShow()
+    {
+        return view('admin.stockList', [
+            'list' => Stock::all()
+        ]);
     }
 }

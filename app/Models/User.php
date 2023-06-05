@@ -36,6 +36,15 @@ class User extends Authenticatable
         'remember_token',
     ];
 
+    public function scopeFilter($query, array $filters)
+    {
+        $query->when($filters['search'] ?? false, function($query, $search) {
+            $query
+            ->where('name', 'like', '%' . $search . '%')
+            ->orWhere('blood_group', 'like', '%' . $search . '%');
+        });
+    }
+
     public function setPasswordAttribute($password)
     {
          $this->attributes['password'] = bcrypt($password);

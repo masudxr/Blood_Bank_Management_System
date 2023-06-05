@@ -1,15 +1,21 @@
-<x-layout>
+<x-admin>
     <h2>
         Welcome To Kpur Blood Bank !!
     </h2>
 
-    <br />
-    <div class="search-container">
+    <!-- <br /> -->
+    <!-- <div class="search-container">
         <form action="/welcome">
             <input type="text" placeholder="Search.." name="search">
             <button type="submit"><i class="fa fa-search"></i></button>
         </form>
-    </div>
+    </div> -->
+    <br />
+    <!-- <div class="relative flex lg:inline-flex items-center bg-gray-100 rounded-xl px-3 py-2">
+        <form method="GET" action="#">
+            <input type="text" name="search" placeholder="Search Donar" class="bg-transparent placeholder-black font-semibold text-sm" value="{{ request('search')}}">
+        </form>
+    </div> -->
     <br />
     <br />
 
@@ -38,4 +44,4 @@
             <p>One blood donation can save up to three lives, according to DeSimone. People usually donate because it feels good to help others, and altruism and volunteering have been linked to positive health outcomes, including a lower risk for depression and greater longevity.</p>
         </div>
     </div>
-</x-layout>
+</x-admin>

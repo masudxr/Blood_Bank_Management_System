@@ -18,44 +18,42 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('welcome',[UserController::class, 'index']);
+Route::get('admin/welcome', [UserController::class, 'index'])->middleware('auth');
 
 Route::get('/', function () {
     return view('view');
-});
+})->middleware('guest');
 
-Route::get('register', [RegisterController::class, 'create']);
-Route::post('register',[RegisterController::class, 'store']);
+Route::get('register', [RegisterController::class, 'create'])->middleware('guest');
+Route::post('register', [RegisterController::class, 'store'])->middleware('guest');
 
-Route::get('login',[UserController::class, 'loginView']);
-Route::post('login',[UserController::class, 'store']);
-Route::get('logout',[UserController::class, 'destroy']);
-
+Route::get('login', [UserController::class, 'loginView'])->middleware('guest');
+Route::post('login', [UserController::class, 'store'])->middleware('guest');
+Route::post('admin/logout', [UserController::class, 'destroy'])->middleware('auth');
 
 Route::get('contact', function () {
     return view('contact.contact');
-});
+})->middleware('guest');
 
 Route::get('about', function () {
     return view('about.about');
-});
+})->middleware('guest');
 
-Route::get('admin/store', [StockController::class, 'index']);     //show stock form
-Route::post('admin/store', [StockController::class, 'store']);    // Update new stock
-
-
-Route::get('donar',[UserController::class, 'show']);   //Donar List
-Route::get('list',[StockController::class, 'show']);   //Stock List
-Route::get('update',[StockController::class, 'getUpdate']);   //getUpdate List
-Route::post('update',[StockController::class, 'update']);   // update List
+Route::get('admin/store', [StockController::class, 'index'])->middleware('auth');    //show stock form
+Route::post('admin/store', [StockController::class, 'store'])->middleware('auth');   // Update new stock
 
 
-Route::get('admin/donor',[UserController::class, 'adminList']);   //Donar List
-Route::get('admin/edit',[UserController::class, 'getDonarUpdatePage']);   //getUpdate Donor List
-Route::post('admin/edit',[UserController::class, 'edit']);   // update Donar List
-Route::get('admin/delete',[UserController::class, 'getDelete']);   // get delete Donar
+Route::get('donar', [UserController::class, 'show'])->middleware('guest');  //Donar List
+Route::get('list', [StockController::class, 'show'])->middleware('guest');  //Stock List
+
+Route::get('admin/update', [StockController::class, 'getUpdate'])->middleware('auth');   //getUpdate List
+Route::post('admin/update', [StockController::class, 'update'])->middleware('auth');   // update List
+Route::get('admin/list', [StockController::class, 'listShow'])->middleware('auth');   //admin blood Stock List
+
+Route::get('admin/donor', [UserController::class, 'adminList'])->middleware('auth');   //Donar List
+Route::get('admin/edit', [UserController::class, 'getDonarUpdatePage'])->middleware('auth');   //getUpdate Donor List
+Route::post('admin/edit', [UserController::class, 'edit'])->middleware('auth'); // update Donar List
+Route::get('admin/delete', [UserController::class, 'getDelete'])->middleware('auth');   // get delete Donar
 
 
-
-
-Route::get('group',[BloodController::class, 'index']);
+Route::get('group', [BloodController::class, 'index']);

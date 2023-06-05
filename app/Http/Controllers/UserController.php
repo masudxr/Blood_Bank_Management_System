@@ -11,7 +11,14 @@ class UserController extends Controller
 
     public function index()
     {
-        return view('welcome');
+        // $user = User::all();
+
+        // if (request('search')) 
+        // {
+        //     $user->where('name', 'like', '%' .request('search') . '%');
+        // }
+
+        return view('admin.welcome');
     }
 
     public function loginView()
@@ -37,7 +44,7 @@ class UserController extends Controller
         }
         session()->regenerate();
 
-        return redirect('/welcome');
+        return redirect('admin/welcome');
     }
 
     public function show()
@@ -55,9 +62,11 @@ class UserController extends Controller
 
     public function adminList()
     {
+        $users = User::all();
         return view('admin.donorList', [
-            'users' => User::all()
+            'users' => $users
         ]);
+
     }
 
     public function getDonarUpdatePage()

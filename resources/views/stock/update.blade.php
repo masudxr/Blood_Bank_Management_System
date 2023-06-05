@@ -7,7 +7,7 @@
         <main class="max-w-lg max-auto mt-10 bg-gray-100 border border-gray-200 p-6 rounded-xl">
             <h1 class="text-center font-bond text-sl">Update Blood Stock</h1>
             @foreach($list as $li)
-            <form method="POST" action="/update" class="mt-10">
+            <form method="POST" action="update" class="mt-10">
                 @csrf
                 <input type="hidden" name="id" value="{{$li->id}}">
 

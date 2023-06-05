@@ -66,7 +66,7 @@
                     <select name="blood_group">
                         <option value="0">Blood Group</option>
                         @foreach($bloods as $blood)
-                        <option name="blood_group" value={{$blood->id}}>{{$blood->name}}</option>
+                        <option name="blood_group" value={{$blood->name}}>{{$blood->name}}</option>
                         @endforeach
                     </select>
                 </div>
