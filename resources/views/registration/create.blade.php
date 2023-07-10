@@ -1,5 +1,5 @@
 <x-layout>
-    <h2>
+    <h2 class="text-center">
         Welcome, Registation Here !
     </h2>
     <section class="px-6 py-8">

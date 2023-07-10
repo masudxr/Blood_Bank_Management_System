@@ -9,6 +9,7 @@
 <style>
     html {
         scroll-behavior: smooth;
+        margin: 0px 170px;
     }
 
     .clamp {
@@ -38,6 +39,10 @@
     .pic {
         max-width: 60%;
         height: 16;
+    }
+
+    ul.li {
+        list-style-type: circle;
     }
 </style>
 

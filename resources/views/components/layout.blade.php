@@ -8,9 +8,12 @@
 
 <style>
     html {
+        margin: 0px 170px;
         scroll-behavior: smooth;
     }
-
+    section {
+        margin: 0px 19%;
+    }
     .clamp {
         display: -webkit-box;
         -webkit-box-orient: vertical;
