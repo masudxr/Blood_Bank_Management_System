@@ -5,7 +5,7 @@
     <br />
     <h1 class="mb-6">
         <a href="/register">
-            Add New Donor vmkvkjkjg
+            Add New Donor
         </a>
     </h1>
     <table id="customers">
