@@ -7,7 +7,10 @@ use App\Http\Controllers\UserController;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ed0b8591a03704f4b88beae12f34c42d172f2465
 Route::get('admin/welcome', [UserController::class, 'index'])->middleware('auth');
 
 Route::get('/', function () {
@@ -45,8 +48,12 @@ Route::get('admin/edit', [UserController::class, 'getDonarUpdatePage'])->middlew
 Route::post('admin/edit', [UserController::class, 'edit'])->middleware('auth'); // update Donar List
 Route::get('admin/delete', [UserController::class, 'getDelete'])->middleware('auth');   // get delete Donar
 
+<<<<<<< HEAD
 
 Route::get('group', [BloodController::class, 'index']);
 
 // User Routes
 Route::get('user', [UserController::class, 'user']);
+=======
+Route::get('group', [BloodController::class, 'index']);
+>>>>>>> ed0b8591a03704f4b88beae12f34c42d172f2465

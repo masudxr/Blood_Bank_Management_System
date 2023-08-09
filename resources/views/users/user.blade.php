@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 <!-- component -->
 <x-userLayout>
+=======
+<x-admin>
+>>>>>>> ed0b8591a03704f4b88beae12f34c42d172f2465
     <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
     <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
     <style>
@@ -30,7 +34,11 @@
                         <div class="flex flex-wrap justify-center">
                             <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
                                 <div class="relative">
+<<<<<<< HEAD
                                     <img alt="..." src="/users/masud.jpg" class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px">
+=======
+                                    <img alt="..." src="/images/cover.png" class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px">
+>>>>>>> ed0b8591a03704f4b88beae12f34c42d172f2465
                                 </div>
                             </div>
                             <div class="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center">
@@ -100,4 +108,8 @@
             </footer>
         </section>
     </main>
+<<<<<<< HEAD
 </x-userLayout>
+=======
+</x-admin>
+>>>>>>> ed0b8591a03704f4b88beae12f34c42d172f2465

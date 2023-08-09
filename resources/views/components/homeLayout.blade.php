@@ -9,6 +9,7 @@
 <style>
     html {
         scroll-behavior: smooth;
+        margin: 0px 170px;
     }
 
     .clamp {
@@ -40,6 +41,7 @@
         height: 16;
     }
 
+<<<<<<< HEAD
     .con {
         text-align: center;
         margin-top: -27px;
@@ -67,6 +69,10 @@
         font-weight: 500;
         text-transform: uppercase;
         font-size: xx-large;
+=======
+    ul.li {
+        list-style-type: circle;
+>>>>>>> ed0b8591a03704f4b88beae12f34c42d172f2465
     }
 </style>
 

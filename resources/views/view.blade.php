@@ -56,21 +56,61 @@
         </div>
         <div class="ml-4 mb-5">
             <h1 class="mb-2">
-                Where does it come from?
+                WHO MAY DONATE BLOOD?
             </h1>
+            <p class="mb-2">
+                Blood donation is a healthy habit that helps blood renewal and it is not hazardous at all. The volume of blood collected from a donor is about 450ml, this volume is compensated within 24hrs of donation and body replace the lost red cells within several weeks. </p>
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
-            </p>
-            <p>
-                Your donation can save the lives of many, make a difference or simply make you feel great about your contribution to humanity. Whatever your reason, whatever your motivation we welcome you to learn more about eligibility and benefits of donating blood with a trusted organization like us.
-            </p>
+                Eligible healthy donors (age 18 to 60 years, having Hb >12gm/dl and weight >45) male can donate blood every 4 months interval and female every 6 months interval. Platelet Apheresis donor’s age should be 18 to 60 years weight >50kg and has not taken the medicine Plavix/Ticlid for last 14 days. </p>
         </div>
+        <div class="row ml-4 mb-5">
+            <div class="column p-8 ml-20 bg-gray-50">
+                <h2 class="mb-4">
+                    SOME INSTRUCTIONS PRIOR BLOOD DONATION:
+                </h2>
+                <ul class="list-disc ml-6">
+                    <li>Do not donate blood on an empty stomach.</li>
+                    <li>Maintain a gap of 30 min after meal.</li>
+                    <li>Good sleep on the previous night.</li>
+                    <li>Drink water (2 glass) before blood donation</li>
+                    <li>Do not donate blood if you have fever, taking antibiotics or aspirin or antihistamine or insulin.</li>
+                    <li>Do not take alcohol 24hrs prior blood donation.</li>
+                    <li>Do not smoke 30 min before or after blood donation.</li>
+                    <li>Avoid driving, vigorous exercise or playing tennis for at least 2-3hrs after blood donation.</li>
+                </ul>
+            </div>
+
+            <div class="column p-8 mr-20 bg-gray-50">
+                <h2 class="mb-4">
+                    SOME INSTRUCTIONS AFTER BLOOD DONATION:
+                </h2>
+                <ul class="list-disc ml-6">
+                    <li>Eat and Drink something before leaving the blood donor area.</li>
+                    <li>Drink more fluid for next 4 hours.</li>
+                    <li>If there is bleeding from phlebotomy site raise arm and apply pressure to the site.
+                    </li>
+                    <li>If fainting or dizziness occur either lie down or sit with the head between the knees.</li>
+                    <li>If the symptom persist either telephone or returns to the blood bank or see a doctor.</li>
+                    <li>Resume all normal activity if asymptomatic.
+                    </li>
+                    <li>Remove bandage after 1 hour.</li>
+
+
+                </ul>
+            </div>
+        </div>
+
+
+
+
         <div class="ml-4 mb-5">
             <h1 class="mb-2">
-                Why do we use it?
+                COLLECTION OF BLOOD:
             </h1>
+            <p class="mb-2">
+                Prior to blood donation, we do a screening process of the donor which consists of confidential medical examinations including medical history, hemoglobin examination, blood pressure, weight , pulse and temperature check . Then, a small amount of blood sample is taken for grouping, check for infectious diseases and cross matching. If all tests are okay then the donor is asked to donate blood. All our materials used in blood donation are strictly sterile and disposable. </p>
             <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
+                Single Donor Apheresis Platelet (SDP) are prepared by connecting the donor to a machine and selectively collecting the platelet and returning the remaining blood components back to the donor.
             </p>
         </div>
     </div>
