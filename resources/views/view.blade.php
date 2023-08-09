@@ -1,4 +1,15 @@
 <x-homeLayout>
+    <section class="banner">
+        <h1> Donate Blood, Save Life !</h1>
+        <h2>
+            Donate Your Blood and inspire others to donate
+        </h2>
+        <a href="/login">
+            <button type="submit" class="transition-colors duration-300 bg-blue-500 hover:bg-blue-600 mt-4 lg:mt-0 lg:ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-8">
+                Join With Us >>
+            </button>
+        </a>
+    </section>
     <div class="row">
         <div class="column">
             <h1>
@@ -21,25 +32,11 @@
             <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
             </p>
-            <br />
-
             <a href="/register">
                 <button type="submit" class="transition-colors duration-300 bg-blue-500 hover:bg-blue-600 mt-4 lg:mt-0 lg:ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-8">
                     Registration
                 </button>
             </a>
-        </div>
-        <div class="column mb-5" style="background-color:#f5f5f5;">
-            <h1 class="mb-3">
-                Already a blood donor?
-            </h1>
-            <p>
-                Sign in for an online account to manage appointments.</p>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-            </p>
-            <br />
-
             <a href="/login">
                 <button type="submit" class="transition-colors duration-300 bg-blue-500 hover:bg-blue-600 mt-4 lg:mt-0 lg:ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-8">
                     Log In

@@ -49,6 +49,13 @@ class UserController extends Controller
 
     public function show()
     {
+        $donors = User::all();
+
+        if (request('search')) {
+            $donors
+                ->where('blood_group', 'like', '%' . request('search') . '%');
+        }
+
         return view('donar', [
             'users' => User::all()
         ]);
@@ -66,7 +73,6 @@ class UserController extends Controller
         return view('admin.donorList', [
             'users' => $users
         ]);
-
     }
 
     public function getDonarUpdatePage()
@@ -102,5 +108,10 @@ class UserController extends Controller
         $deleteUser = User::find($list['id']);
         $deleteUser->delete();
         return redirect('admin/donor');
+    }
+
+    public function user()
+    {
+        return view('users.user');
     }
 }

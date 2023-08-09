@@ -39,10 +39,45 @@
         max-width: 60%;
         height: 16;
     }
+
+    .con {
+        text-align: center;
+        margin-top: -27px;
+
+    }
+
+    .banner {
+        background-image: url("images/donate.webp");
+        height: 402px;
+        width: 65%;
+        margin-bottom: 30px;
+        color: azure;
+        text-align: center;
+        background-repeat: no-repeat;
+        margin: auto;
+
+    }
+
+    .banner h1 {
+        padding-top: 180px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    .banner h2 {
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: xx-large;
+    }
 </style>
 
 <body style="font-family: Open Sans, sans-serif">
     <section class="px-6 py-8">
+        <div class="con">
+            <h3>
+                Gmail: masudxr@gmail.com
+                Contact: +8801737629952
+            </h3>
+        </div>
         <nav class="md:flex md:justify-between md:items-center">
             <div>
                 <a href="/">
@@ -51,11 +86,12 @@
             </div>
 
             <div class="mt-8 md:mt-0 flex items-center">
-                <a href="/donar" class="ml-6 text-xs font-bold uppercase">Donor List</a>
-                <a href="/list" class="ml-6 text-xs font-bold uppercase">Stock Blood List</a>
-                <a href="#newsletter" class="bg-blue-500 ml-3 rounded-full text-xs font-semibold text-white uppercase py-3 px-5">
-                    Subscribe for Updates
-                </a>
+                <a href="/" class="ml-6 text-xs font-bold uppercase">Home</a>
+                <a href="/blog" class="ml-6 text-xs font-bold uppercase">Blog</a>
+                <a href="/contact" class="ml-6 text-xs font-bold uppercase">Contact</a>
+                <a href="/about" class="ml-6 text-xs font-bold uppercase">About US</a>
+                <!-- <a href="/donar" class="ml-6 text-xs font-bold uppercase">Donor List</a> -->
+                <!-- <a href="/list" class="ml-6 text-xs font-bold uppercase">Stock Blood List</a> -->
             </div>
         </nav>
         {{ $slot }}

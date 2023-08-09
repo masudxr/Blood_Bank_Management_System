@@ -1,5 +1,5 @@
 <x-layout>
-    <section class="px-6 py-8">
+    <section class="log px-6 py-8">
         <main class="max-w-lg max-auto mt-10 bg-gray-100 border border-gray-200 p-6 rounded-xl">
             <h1 class="text-center font-bond text-sl">Log In!</h1>
             <form method="POST" action="/login" class="mt-10">
@@ -25,6 +25,11 @@
                     <button type="submit" class="bg-blue-400 text-white rounded py-2 px-4 hover:bg-blue-500">
                         Log In
                     </button>
+                </div>
+                <div>
+                    <h2>
+                        If You New Here, Click Here!!
+                    </h2>
                 </div>
             </form>
         </main>
